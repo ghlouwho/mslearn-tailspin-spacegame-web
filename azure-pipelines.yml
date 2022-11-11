@@ -15,7 +15,7 @@ pool:
     name: 'Default'
     demands:
     - agent.name -equals lou-virtual-machine
-    - npm
+#   - npm
   
 variables:
     buildConfiguration: 'Release'
