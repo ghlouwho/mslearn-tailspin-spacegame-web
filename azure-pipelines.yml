@@ -6,10 +6,16 @@
 trigger:
 - '*'
   
+#pool:
+# vmImage: 'ubuntu-20.04'
+# demands:
+#pool:
+#  vmImage: ubuntu-latest
 pool:
-  vmImage: 'ubuntu-20.04'
-  demands:
-  - npm
+    name: 'Default'
+    demands:
+    - agent.name -equals lou-virtual-machine
+    - npm
   
 variables:
     buildConfiguration: 'Release'
